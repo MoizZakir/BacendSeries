@@ -11,7 +11,7 @@ const signupController=async (req,res)=>{
         firstName:userdata.firstName
         ,userName:userdata.userName
         ,lastName:userdata.lastName
-        ,emailuser:userdata.email
+        ,email:userdata.email
         ,password:hashedPassword
         ,
 
