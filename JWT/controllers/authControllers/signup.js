@@ -20,12 +20,12 @@ const signupController=async (req,res)=>{
         const userInfoSend=await userSignup.save(userSignup);
         if(userInfoSend){
             // console.log(userInfoSend)
-            return res.status(400).send('data added Succesfully ')
+            return res.status(200).json({status:true,message:'data added Succesfully '})
         }
         
     } catch (error) {
         
-        return res.status(402).send(error)
+        return res.status(402).json({status:false,message:'error '})
     }
 
 
